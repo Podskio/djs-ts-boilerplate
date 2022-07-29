@@ -15,7 +15,7 @@ CLIENT_ID=
 TOKEN=
 ```
 
-Create commands in `src/commands` and `src/events`.
+Create commands in `src/commands` and event handlers in `src/events`.
 
 Run `yarn dev` to start the bot.
 
