@@ -2,7 +2,7 @@
 
 A simple boilerplate for discord.js bots using Typescript.
 
-### Usage
+## Usage
 
 Clone the repository or click "use this template" above.
 
