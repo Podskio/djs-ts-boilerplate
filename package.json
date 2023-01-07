@@ -1,9 +1,7 @@
 {
   "name": "djs-ts-boilerplate",
-  "description": "A simple boilerplate for discord.js bots using Typescript.",
   "main": "src/index.ts",
   "author": "jpod32",
-  "license": "Unlicense",
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc",
