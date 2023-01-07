@@ -1,7 +1,5 @@
 # djs-ts-boilerplate
 
-A simple boilerplate for discord.js bots using Typescript.
-
 ## Usage
 
 Clone the repository or click "use this template" above.
