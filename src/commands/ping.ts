@@ -1,4 +1,5 @@
-import { inlineCode, SlashCommandBuilder } from "discord.js";
+import { SlashCommandBuilder, inlineCode } from "discord.js";
+
 import { CommandExecution } from "../interfaces/command";
 
 export const execution: CommandExecution = async (_, interaction) => {
@@ -9,6 +10,6 @@ export const execution: CommandExecution = async (_, interaction) => {
   });
 };
 
-export const data: SlashCommandBuilder = new SlashCommandBuilder()
+export const data = new SlashCommandBuilder()
   .setName("ping")
   .setDescription("Pings the bot and returns response time.");
