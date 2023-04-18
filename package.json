@@ -2,7 +2,7 @@
   "name": "djs-ts-boilerplate",
   "private": true,
   "main": "src/index.ts",
-  "author": "jpod32",
+  "author": "Podskio",
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc",
