@@ -11,14 +11,14 @@
     "deploy-commands": "ts-node src/deploy-commands.ts"
   },
   "dependencies": {
-    "@discordjs/rest": "^1.6.0",
-    "discord.js": "^14.8.0",
-    "dotenv": "^16.0.1"
+    "@discordjs/rest": "^1.7.1",
+    "discord.js": "^14.10.0",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
-    "@types/node": "^18.14.6",
-    "nodemon": "^2.0.21",
+    "@types/node": "^18.16.3",
+    "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.4"
   }
 }
