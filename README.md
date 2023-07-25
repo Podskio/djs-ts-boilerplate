@@ -4,7 +4,7 @@
 
 Clone the repository or click "use this template" above.
 
-Run `yarn install`.
+Run `pnpm install`.
 
 Create a `.env` file then add your client id and bot token from the [Discord Developer Portal](https://discord.com/developers/applications).
 
@@ -15,6 +15,6 @@ TOKEN=
 
 Create commands in `src/commands` and event handlers in `src/events`.
 
-Run `yarn dev` to start the bot.
+Run `pnpm dev` to start the bot.
 
-Run `yarn deploy-commands` to register command changes.
+Run `pnpm deploy-commands` to register command changes.
