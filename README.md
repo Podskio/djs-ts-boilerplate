@@ -1,20 +1,15 @@
 # djs-ts-boilerplate
 
-## Usage
+A boilerplate to get a bot running using [discord.js](https://discord.js.org/#/) with TypeScript. Includes support for all current Discord interaction types and client events.
 
-Clone the repository or click "use this template" above.
+1. Clone the repository.
 
-Run `pnpm install`.
+2. Run `pnpm install`.
 
-Create a `.env` file then add your client id and bot token from the [Discord Developer Portal](https://discord.com/developers/applications).
+3. Create a `.env` file then add your client id and bot token from the [Discord Developer Portal](https://discord.com/developers/applications).
 
-```
-CLIENT_ID=
-TOKEN=
-```
+4. Create interactions in `src/interaction/<type>` and event handlers in `src/events`. **File names must exactly match the discord.js event name or interaction id/name** as this is how the interactionCreate finds the correct execution.
 
-Create commands in `src/commands` and event handlers in `src/events`.
+5. Run `pnpm dev` to start the bot and restart on file changes.
 
-Run `pnpm dev` to start the bot.
-
-Run `pnpm deploy-commands` to register command changes.
+6. Run `pnpm deploy-commands` to push command changes to Discord.
