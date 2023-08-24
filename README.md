@@ -14,8 +14,6 @@ TOKEN=
 
 4. Create interactions in `src/interaction/<type>` and event handlers in `src/events`. **File names must exactly match the discord.js event name or interaction id/name** as this is how the interactionCreate finds the correct execution.
 
-5. Remove the `.gitkeep` files in any interaction directories you are not using. 
+5. Run `pnpm dev` to start the bot and restart on file changes.
 
-6. Run `pnpm dev` to start the bot and restart on file changes.
-
-7. Run `pnpm deploy-commands` to push command changes to Discord.
+6. Run `pnpm deploy-commands` to push command changes to Discord.
