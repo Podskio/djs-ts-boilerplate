@@ -2,7 +2,7 @@ import type { ButtonInteraction, CommandInteraction } from "discord.js";
 import { type BaseInteraction } from "discord.js";
 import { existsSync, readdirSync } from "fs";
 import path from "path";
-import { type CommandExecution, type EventExecution } from "../types";
+import { type EventExecution, type InteractionExecution } from "../types";
 
 const interactionTypes = [
   {
@@ -28,7 +28,7 @@ const interactionTypes = [
   },
 ];
 
-const interactions = new Map<string, CommandExecution<BaseInteraction>>();
+const interactions = new Map<string, InteractionExecution<BaseInteraction>>();
 const interactionPath = "../interactions";
 
 for (const { interactionType } of interactionTypes) {
@@ -38,7 +38,7 @@ for (const { interactionType } of interactionTypes) {
 
   readdirSync(path.join(__dirname, interactionPath, interactionType))
     .filter((f) => f.slice(-3) === ".js" || f.slice(-3) === ".ts")
-    .map((f) => {
+    .forEach((f) => {
       // eslint-disable-next-line @typescript-eslint/no-var-requires
       const interaction = require(path.join(
         __dirname,
@@ -47,6 +47,7 @@ for (const { interactionType } of interactionTypes) {
         f
       ));
       const interactionExecution = interaction.execution;
+      if (!interactionExecution) return;
 
       interactions.set(
         `${interactionType}_${f.split(".")[0]}`,

@@ -5,6 +5,6 @@ export interface EventExecution {
   (client: Client, ...args: any[]): void;
 }
 
-export interface CommandExecution<T = CommandInteraction> {
+export interface InteractionExecution<T = CommandInteraction> {
   (interaction: T): void;
 }
